@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Valores</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('cara.png') center/cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      backdrop-filter: brightness(0.7);
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00ffff;
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .card {
+      background: rgba(11, 11, 12, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .info {
+      flex: 1 1 400px;
+      padding: 40px;
+    }
+
+    .info h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .precos {
+      margin: 20px 0;
+    }
+
+    .preco-item {
+      background: linear-gradient(to right, #0074D9, #39CCCC);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .beneficios {
+      margin-top: 30px;
+    }
+
+    .beneficios li {
+      margin-bottom: 10px;
+    }
+
+    .sistema {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    .botoes {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .botoes a,
+    .botoes button {
+      background-color: #0074D9;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .botoes a:hover,
+    .botoes button:hover {
+      background-color: #005fa3;
+    }
+
+    .imagem {
+      flex: 1 1 400px;
+      background: url('Captura de tela 2024-10-26 232043.png') center/cover no-repeat;
+      min-height: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>MG FILMES</header>
+  <div class="card">
+    <div class="info">
+      <h1>Tabela de Valores</h1>
+      <div class="precos">
+        <div class="preco-item">10 A 49 CRÉDITOS</div>
+        <div class="preco-item">50 A 99 CRÉDITOS</div>
+        <div class="preco-item">100 A 299 CRÉDITOS</div>
+        <div class="preco-item">300 A 999 CRÉDITOS</div>
+        <div class="preco-item">1000 A 2999 CRÉDITOS</div>
+        <div class="preco-item">3000 A 5999 CRÉDITOS</div>
+      </div>
+      <ul class="beneficios">
+        <li>MELHORES FONTES</li>
+        <li>QUALIDADE INCOMPARÁVEL</li>
+        <li>INFRAESTRUTURA ROBUSTA</li>
+        <li>SUPORTE 24 HORAS</li>
+        <li>E MUITO MAIS</li>
+      </ul>
+      <div class="sistema">
+        SUPER SISTEMA ANTI-TRAVAMENTO<br>
+        TESTADO E APROVADO
+      </div>
+      <div class="botoes">
+        <button>Comprar Créditos</button>
+        <a href="https://wa.me/5561982411470" target="_blank">Fale Conosco</a>
+        <button>Ver Planos</button>
+      </div>
+    </div>
+    <div class="imagem"></div>
+  </div>
+</body>
+</html>
